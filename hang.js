@@ -77,7 +77,7 @@ document.getElementById("input").onchange = function () {
             case 5:
                 wachin.src = "https://i.ibb.co/WgfC3fH/5-soga.png";
                 function timeFunction() {
-                    setTimeout(function () { alert("perdiste"); location.reload(); }, 800);
+                    setTimeout(function () { alert("La palabra era " + palabraOculta); location.reload(); }, 800);
                 }
                 timeFunction()
                 break;
