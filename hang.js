@@ -45,11 +45,12 @@ document.getElementById("input").onchange = function () {
             win.src = "https://media4.giphy.com/media/SsaGzaI7QEaft8s3HK/giphy.gif?cid=790b7611ff284530e4067afd1cc70a4b122652e7530d7016&rid=giphy.gif&ct=s";
             winSong.volume = 0.2;
             winSong.play();
-        }
-        function winFunction() {
+            function winFunction() {
             setTimeout(function () { location.reload(); }, 3000);
         }
         winFunction()
+        }
+        
     } else { //aca va lo que pasa si no acertas
 
         strikes++
