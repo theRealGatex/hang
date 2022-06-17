@@ -1,0 +1,44 @@
+<body style="background-color: rgb(204, 223, 201)" ;>
+  <center>
+    <h1 class="cuadradito">ahorcado </h1>
+
+    <TABLE BGCOLOR=red BORDER=1>
+      <h1 id="cantidadDeLetras"></h1>
+      <style id=holder type="text/css">
+        .cuadradito {
+          font-family: Tahoma, sans-serif;
+          color: #000000;
+          font-size: 40px;
+          font-weight: 50;
+          text-align: center;
+          margin: 0 0 5px;
+          padding: 5px;
+          border-radius: 10px 0px 10px 0px;
+          border-radius: 5px 5px 5px 5px;
+          border: 2px solid #0c0e15;
+
+        }
+
+        .centered {
+          display: block;
+          position: relative;
+          margin-left: 25%;
+          margin-right: 50%;
+        }
+      </style>
+    </TABLE>
+  </center>
+
+  <div>
+    <label for="letra">
+      <span>Letra:</span>
+      <input type="text" id="input" maxlength="1">
+      <h3 id="letrasErradas"> Letras erradas: </h3>
+    </label>
+  </div>
+  <audio id="winSong">
+    <source src="win.mp3">
+    </source>
+       </audio>
+  <script src="hang.js"></script>
+</body>
