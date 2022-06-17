@@ -13,7 +13,7 @@ const head = document.createElement("h1");
 head.style.cssText = 'text-align: center;';
 document.body.appendChild(head);
 
-const chars = palabraOculta.split(''); // para mostrar array sin comas va .join(' ')
+const chars = palabraOculta.toLowerCase().split(''); // para mostrar array sin comas va .join(' ')
 const regex = /[a-z]/gi;
 
 // muestra los caracteres ocultos de la palabra, crea un contador para contar los strikes y un lugar donde aparece el wachin
@@ -27,10 +27,10 @@ document.body.appendChild(wachin);
 
 //cuando jugador escribe ve si la letra coincide o no con alguna de las letras de la palabraOculta
 document.getElementById("input").onchange = function () {
-    const userChar = document.getElementById("input").value
+    const userChar = document.getElementById("input").value.toLowerCase()
     function checkChar() {
         for (let i = 0; i < chars.length; i++) {
-            if (chars[i] == userChar.toLowerCase()) {
+            if (chars[i] == userChar) {
                 return true
             }
         }
