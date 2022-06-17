@@ -4,7 +4,6 @@ let palabraOculta = prompt("Escribi una palabra")
 const letrasAdivinadas = []
 const estaLetraYaFueAdivinada = (letra) => letrasAdivinadas.includes(letra) //funcion que te dice si una letra ya se adivino o todavia no
 const winSong = document.getElementById("winSong")
-const ganador = head.innerText
 
 //te muestra cuantos caracteres tiene
 document.getElementById("cantidadDeLetras").innerHTML = "la palabra tiene " + palabraOculta.length + " letras"
@@ -39,7 +38,7 @@ document.getElementById("input").onchange = function () {
     if (checkChar() === true) {   // aca va lo que pasa si acertaste
         letrasAdivinadas.push(userChar)
         head.innerText = chars.map(caracter => estaLetraYaFueAdivinada(caracter) ? caracter : "*").join("")
-        if (ganador === palabraOculta) {
+        if (head.innerText === palabraOculta) {
 
             let win = document.createElement("img");
             win.style.cssText = ' max-width:10%;';
